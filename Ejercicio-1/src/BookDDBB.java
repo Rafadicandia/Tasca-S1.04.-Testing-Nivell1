@@ -6,7 +6,6 @@ Se debe poder eliminar un libro por título.*/
 
 
 import java.util.ArrayList;
-
 import java.util.ListIterator;
 
 public class BookDDBB {
@@ -35,7 +34,11 @@ public class BookDDBB {
     }
 
     public void addBookByIndex(Book name, int index){
+        booksList.add(index, name);
+    }
 
+    public void removeBook(Book name){
+        booksList.remove(name);
     }
 
 
