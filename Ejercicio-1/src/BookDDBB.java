@@ -37,6 +37,10 @@ public class BookDDBB {
         booksList.remove(name);
     }
 
+    public int getSize(){
+        return booksList.size();
+    }
+
 
 
 }
