@@ -1,8 +1,4 @@
-/*La clase debe permitir añadir libros a la colección.
-Se debe poder recuperar la lista completa de libros
-Se debe poder obtener el título de un libro dada una posición.
-Se debe poder añadir un libro en una posición específica.
-Se debe poder eliminar un libro por título.*/
+
 
 
 import java.util.ArrayList;
