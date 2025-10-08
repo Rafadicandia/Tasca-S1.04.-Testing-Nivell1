@@ -1,6 +1,6 @@
 /*Verifica su correcto funcionamiento con JUnit:
 
-Verifican que la lista de libros no es nula después de crear un objeto nuevo.
+Verifican que la lista de libros no es nula después de crear un objeto nuevo.done
 Confirman que la lista tiene un tamaño esperado después de insertar varios libros.
 Aseguran que la lista contiene un libro específico en su correcta posición.
 Verifican que no existen títulos de libros duplicados en la lista.
@@ -37,7 +37,10 @@ public class BookDDBBTest {
     }
 
     @Test
-    public void sizeVeriFied(){
+    public void listSizeIsCorrect(){
+        bookDDBB.addBook(book1);
+        bookDDBB.addBook(book2);
+        Assertions.assertEquals(2, bookDDBB.getSize());
 
     }
 
