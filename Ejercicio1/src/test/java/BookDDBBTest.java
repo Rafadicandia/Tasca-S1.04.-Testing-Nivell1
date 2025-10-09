@@ -3,8 +3,8 @@
 Verifican que la lista de libros no es nula después de crear un objeto nuevo. done
 Confirman que la lista tiene un tamaño esperado después de insertar varios libros. done
 Aseguran que la lista contiene un libro específico en su correcta posición. done
-Verifican que no existen títulos de libros duplicados en la lista.
-Comprueban que se puede recuperar el título de un libro dada una posición específica.
+Verifican que no existen títulos de libros duplicados en la lista. done
+Comprueban que se puede recuperar el título de un libro dada una posición específica. done
 Aseguran que añadir un libro modifica correctamente la lista.
 Confirman que eliminar un libro disminuye el tamaño de la lista.
 Verifican que la lista permanece ordenada alfabéticamente después de añadir o eliminar un libro.*/
@@ -50,9 +50,15 @@ public class BookDDBBTest {
     @Test
     public void bookIsNotDuplicated(){
         bookDDBB.addBook(book1);
-        bookDDBB.addBook(book1);
+        Book duplicatedBook = new Book("El libro de los Test");
 
+        bookDDBB.addBook(duplicatedBook);
+
+        String failmessage = "The duplicate book should have been baned. The proper size of the list should be 1";
+        Assertions.assertEquals(1, bookDDBB.getSize(), failmessage);
     }
+
+   
 
 
 
