@@ -47,8 +47,14 @@ public class BookDDBBTest {
     public void bookIsAtCorrectPosition(){
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
-        bookDDBB.getNameByIndex(1);
         Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(1));
+    }
+
+    @Test
+    public void bookIsNotDuplicated(){
+        bookDDBB.addBook(book1);
+        bookDDBB.addBook(book1);
+
     }
 
 
