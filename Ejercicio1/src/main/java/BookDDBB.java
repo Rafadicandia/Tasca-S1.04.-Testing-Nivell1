@@ -44,6 +44,7 @@ public class BookDDBB {
 
     public void removeBook(Book name){
         booksList.remove(name);
+        Collections.sort(booksList, NAME_COMPARATOR);
     }
 
     public int getSize(){

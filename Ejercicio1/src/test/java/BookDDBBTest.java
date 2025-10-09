@@ -6,7 +6,7 @@ Aseguran que la lista contiene un libro específico en su correcta posición. do
 Verifican que no existen títulos de libros duplicados en la lista. done
 Comprueban que se puede recuperar el título de un libro dada una posición específica. done
 Aseguran que añadir un libro modifica correctamente la lista.done
-Confirman que eliminar un libro disminuye el tamaño de la lista.
+Confirman que eliminar un libro disminuye el tamaño de la lista.done
 Verifican que la lista permanece ordenada alfabéticamente después de añadir o eliminar un libro.*/
 
 import org.junit.jupiter.api.Assertions;
@@ -92,6 +92,24 @@ public class BookDDBBTest {
         bookDDBB.removeBook(bookA);
 
         Assertions.assertEquals(2, bookDDBB.getSize());
+
+    }
+
+    @Test
+    public void CheckListStillOrginizedAfterRemovingElement(){
+
+        Book bookA = new Book("Agora");
+        Book bookB = new Book("Belgica");
+        Book bookC = new Book("California");
+
+        bookDDBB.addBook(bookA);
+        bookDDBB.addBook(bookB);
+        bookDDBB.addBook(bookC);
+        bookDDBB.removeBook(bookB);
+
+        Assertions.assertEquals("Agora", bookDDBB.getNameByIndex(0));
+        Assertions.assertEquals("California", bookDDBB.getNameByIndex(1));
+
 
     }
 
