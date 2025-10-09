@@ -19,29 +19,29 @@ public class Book {
     public String getName(){
         return name;
     }
+    @Override
+    public boolean equals(Object obj) {
 
-}
+        if (this == obj) {
+            return true;
+        }
 
-@Override
-public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
 
-    if (this == obj) {
-        return true;
+
+        Book other = (Book) obj;
+
+
+        return this.name.equals(other.name);
     }
 
-    if (obj == null || getClass() != obj.getClass()) {
-        return false;
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name);
     }
-
-
-    Book other = (Book) obj;
-
-
-    return this.name.equals(other.name);
 }
 
-@Override
-public int hashCode() {
 
-    return Objects.hash(name);
-}

@@ -1,6 +1,3 @@
-
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +18,7 @@ public class BookDDBB {
         }else{
             booksList.add(newBook);
         }
+        Collections.sort(booksList, NAME_COMPARATOR);
         return true;
 
     }
