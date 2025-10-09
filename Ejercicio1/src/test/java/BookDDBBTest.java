@@ -5,7 +5,7 @@ Confirman que la lista tiene un tamaño esperado después de insertar varios lib
 Aseguran que la lista contiene un libro específico en su correcta posición. done
 Verifican que no existen títulos de libros duplicados en la lista. done
 Comprueban que se puede recuperar el título de un libro dada una posición específica. done
-Aseguran que añadir un libro modifica correctamente la lista.
+Aseguran que añadir un libro modifica correctamente la lista.done
 Confirman que eliminar un libro disminuye el tamaño de la lista.
 Verifican que la lista permanece ordenada alfabéticamente después de añadir o eliminar un libro.*/
 
@@ -78,8 +78,23 @@ public class BookDDBBTest {
         Assertions.assertEquals("Agora", bookDDBB.getNameByIndex(0));
         Assertions.assertEquals("Belgica", bookDDBB.getNameByIndex(1));
         Assertions.assertEquals("California", bookDDBB.getNameByIndex(2));
-        
     }
+
+    @Test
+    public void listDecreasesAfterRemovingElement(){
+        Book bookA = new Book("Agora");
+        Book bookB = new Book("Belgica");
+        Book bookC = new Book("California");
+
+        bookDDBB.addBook(bookA);
+        bookDDBB.addBook(bookB);
+        bookDDBB.addBook(bookC);
+        bookDDBB.removeBook(bookA);
+
+        Assertions.assertEquals(2, bookDDBB.getSize());
+
+    }
+
 
 
 
