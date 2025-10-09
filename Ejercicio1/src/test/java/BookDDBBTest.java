@@ -1,6 +1,6 @@
 /*Verifica su correcto funcionamiento con JUnit:
 
-Verifican que la lista de libros no es nula después de crear un objeto nuevo.done
+Verifican que la lista de libros no es nula después de crear un objeto nuevo. done
 Confirman que la lista tiene un tamaño esperado después de insertar varios libros. done
 Aseguran que la lista contiene un libro específico en su correcta posición. done
 Verifican que no existen títulos de libros duplicados en la lista.
@@ -15,14 +15,12 @@ import org.junit.jupiter.api.Test;
 
 public class BookDDBBTest {
 
-
     private BookDDBB bookDDBB; // Usamos nombres más genéricos
     private Book book1;
     private Book book2;
 
     @BeforeEach
     public void setup() {
-
         bookDDBB = new BookDDBB();
         book1 = new Book("El libro de los Test");
         book2 = new Book("El gran libro de los Test");
@@ -40,7 +38,6 @@ public class BookDDBBTest {
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
         Assertions.assertEquals(2, bookDDBB.getSize());
-
     }
 
     @Test

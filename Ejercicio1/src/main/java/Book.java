@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Book {
     private String name;
@@ -19,4 +20,28 @@ public class Book {
         return name;
     }
 
+}
+
+@Override
+public boolean equals(Object obj) {
+
+    if (this == obj) {
+        return true;
+    }
+
+    if (obj == null || getClass() != obj.getClass()) {
+        return false;
+    }
+
+
+    Book other = (Book) obj;
+
+
+    return this.name.equals(other.name);
+}
+
+@Override
+public int hashCode() {
+
+    return Objects.hash(name);
 }
