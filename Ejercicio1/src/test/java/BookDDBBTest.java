@@ -57,8 +57,14 @@ public class BookDDBBTest {
         String failmessage = "The duplicate book should have been baned. The proper size of the list should be 1";
         Assertions.assertEquals(1, bookDDBB.getSize(), failmessage);
     }
+    @Test
+    public void getBookAtSpecificIndex(){
+        bookDDBB.addBook(book1);
+        bookDDBB.addBook(book2);
+        Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(1));
+        Assertions.assertEquals("El libro de los Test", bookDDBB.getNameByIndex(0));
+    }
 
-   
 
 
 
