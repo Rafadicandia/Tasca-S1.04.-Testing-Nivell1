@@ -31,8 +31,15 @@ public class BookDDBB {
         return booksList.get(index).getName();
     }
 
-    public void addBookByIndex(Book name, int index){
-        booksList.add(index, name);
+    public boolean addBookByIndex(Book name, int index){
+        if(booksList.contains(name)){
+            return false;
+        }else{
+            booksList.add(index, name);
+        }
+        Collections.sort(booksList, NAME_COMPARATOR);
+        return true;
+
     }
 
     public void removeBook(Book name){

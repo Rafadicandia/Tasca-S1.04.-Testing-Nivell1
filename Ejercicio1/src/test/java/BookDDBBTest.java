@@ -44,7 +44,7 @@ public class BookDDBBTest {
     public void bookIsAtCorrectPosition(){
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
-        Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(1));
+        Assertions.assertEquals("El libro de los Test", bookDDBB.getNameByIndex(1));
     }
 
     @Test
@@ -61,8 +61,24 @@ public class BookDDBBTest {
     public void getBookAtSpecificIndex(){
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
-        Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(1));
-        Assertions.assertEquals("El libro de los Test", bookDDBB.getNameByIndex(0));
+        Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(0));
+        Assertions.assertEquals("El libro de los Test", bookDDBB.getNameByIndex(1));
+    }
+
+    @Test
+    public void listStillOrganizedAfterAdding(){
+        Book bookA = new Book("Agora");
+        Book bookB = new Book("Belgica");
+        Book bookC = new Book("California");
+
+        bookDDBB.addBook(bookA);
+        bookDDBB.addBook(bookB);
+        bookDDBB.addBookByIndex(bookC, 1);
+
+        Assertions.assertEquals("Agora", bookDDBB.getNameByIndex(0));
+        Assertions.assertEquals("Belgica", bookDDBB.getNameByIndex(1));
+        Assertions.assertEquals("California", bookDDBB.getNameByIndex(2));
+        
     }
 
 
