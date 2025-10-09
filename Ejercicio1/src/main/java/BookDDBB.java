@@ -2,7 +2,8 @@
 
 
 import java.util.ArrayList;
-import java.util.ListIterator;
+import java.util.Collections;
+import java.util.List;
 
 public class BookDDBB {
 
@@ -12,17 +13,14 @@ public class BookDDBB {
         this.booksList=new ArrayList<>();
     }
 
-    ListIterator<Book> it1 = booksList.listIterator();
+
 
     public void addBook(Book newBook){
         booksList.add(newBook);
     }
 
-    public void getAllBooks(){
-
-        while (it1.hasNext()){
-            System.out.println(it1.next());
-        }
+    public List<Book> getAllBooks(){
+            return Collections.unmodifiableList(this.booksList);
     }
 
     public String getNameByIndex(int index){
