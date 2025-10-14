@@ -8,8 +8,8 @@ public class DNICalculator {
 
     public static void main(String[] args) {
 
-        //47421215Y
-       getDNILetter(47421215);
+
+       getDNILetter(32096242);
 
 
     }
