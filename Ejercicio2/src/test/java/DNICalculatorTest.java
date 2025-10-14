@@ -5,15 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class DNICalculatorTest {
-
-//    @Test
-//    public void DNILetterTest() {
-//        int dni = 32096242;
-//        char letter='H';
-//        char calculated=DNICalculator.getDNILetter(dni);
-//        assertEquals(letter, calculated, "Not Correct");
-//    }
-
     @ParameterizedTest
     @CsvSource({
             "32096242, H",
