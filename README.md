@@ -50,7 +50,7 @@ Verify its correct functionality with a JUnit test.
 - Clone the Repository:
 
 ```bash
-git clone https://github.com/https://github.com/Rafadicandia/Tasca-S1.04.-Testing-Nivell1.git
+git clone https://github.com/Rafadicandia/Tasca-S1.04.-Testing-Nivell1.git
 ```
 
 - IDE Configuration:
