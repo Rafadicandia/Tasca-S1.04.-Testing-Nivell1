@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a9a74fa-5901-4a49-848a-19b17d332edc" name="Changes" comment="" />
+    <list default="true" id="6a9a74fa-5901-4a49-848a-19b17d332edc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookDDBBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookDDBBTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rafaeldicandia/ItAcademy/Tasca S1.04. Testing-Nivell1/Ejercicio1/src/main/java"
+    "last_opened_file_path": "/Users/rafaeldicandia/ItAcademy/Tasca S1.04. Testing-Nivell1/Ejercicio1"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -41,6 +43,33 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BookDDBBTest">
+    <configuration name="BookDDBBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ejercicio1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookDDBBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDDBBTest.bookIsNotDuplicated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ejercicio1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookDDBBTest" />
+      <option name="METHOD_NAME" value="bookIsNotDuplicated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookDDBBTest" />
+        <item itemvalue="JUnit.BookDDBBTest.bookIsNotDuplicated" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
