@@ -1,8 +1,6 @@
 
 ## 📄 Description - Exercise Statement
 
-Aquí tienes la traducción al inglés:
-
 ### Exercise 1
 Create a Java class that manages a collection of books in a library. The class must allow adding books, retrieving the list of books, getting a specific book by its position, adding a book at a specific position, and removing a book by title.
 Implement the following functionalities:
@@ -29,9 +27,15 @@ Create a JUnit class that verifies its correct functionality, parameterizing it 
 Create a class with a method that throws an `ArrayIndexOutOfBoundsException`.
 Verify its correct functionality with a JUnit test.
 
+-----
+
 ## 💻 Used Technologies
 
-**Java**: 24 (OpenJDK)
+| Technology | Version | Description |
+| :--- | :--- | :--- |
+| **Java** | 24 (OpenJDK) | Language and environment for development. |
+| **JUnit 5** | 5.10.2 (or higher) | Testing framework. |
+| **Apache Maven** | 3.9.6 (or higher) | Build automation and project management tool. |
 
 -----
 
@@ -39,35 +43,49 @@ Verify its correct functionality with a JUnit test.
 
 - Operating System: Windows/macOS/Linux.
 
-- **Java Development Kit (JDK):** Version 24.0.1 (or higher). It is recommended to use an **OpenJDK** distribution.
+- **Java Development Kit (JDK):** Version **24.0.1** (or higher). It is recommended to use an **OpenJDK** distribution.
 
-- Integrated Development Environment (IDE): IntelliJ IDEA.
+- **Apache Maven:** Installed and configured in the system PATH.
+
+- Integrated Development Environment (IDE): **IntelliJ IDEA** (recommended) or any other IDE with Maven support.
 
 -----
 
 ## 🛠️ Installation
 
-- Clone the Repository:
+1.  **Clone the Repository:**
 
-```bash
-git clone https://github.com/Rafadicandia/Tasca-S1.04.-Testing-Nivell1.git
-```
+    ```bash
+    git clone https://github.com/Rafadicandia/Tasca-S1.04.-Testing-Nivell1.git
+    
+    ```
 
-- IDE Configuration:
+2.  **IDE Configuration:**
 
-Open the file as a Java project.
+    Open the folder as a **Maven project** in your IDE. The IDE should automatically download the necessary dependencies (JUnit 5) defined in the `pom.xml` file.
+
+3.  **Build the Project:**
+
+    To ensure all dependencies are resolved and the project compiles correctly, you can run the following command in the terminal from the project root:
+
+    ```bash
+    mvn clean install
+    ```
 
 -----
 
 ## ▶️ Execution
 
-- Execute from the IDE
-  - Open the main file (the one containing the `main` method).
+### ⚙️ Execute from the IDE
 
-  - Right-click and select "Run 'Main'".
+- **Run Tests:** Locate the JUnit test classes (e.g., in the `src/test/java` folder), right-click on the test class or method, and select "Run '...Test'".
+
 
 -----
 
 ## 🤝 Contributions
 
 Contributions are welcome. Please report any bugs by opening an issue or suggest improvements via a clear and concise Pull Request.
+
+```
+```
