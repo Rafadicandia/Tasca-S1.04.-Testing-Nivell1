@@ -3,22 +3,23 @@ import java.util.Objects;
 public class Book {
     private String name;
 
-    public Book(String name){
+    public Book(String name) {
 
-        if (name==(null)){
+        if (name == (null)) {
             throw new IllegalArgumentException("The name of the book can't be null");
         }
 
-        if (name.isBlank()){
+        if (name.isBlank()) {
             throw new IllegalArgumentException("The name of the book can't be empty");
         }
 
-        this.name=name;
+        this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
     public boolean equals(Object obj) {
 

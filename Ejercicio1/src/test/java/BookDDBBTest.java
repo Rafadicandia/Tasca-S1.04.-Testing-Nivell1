@@ -17,28 +17,27 @@ public class BookDDBBTest {
     }
 
 
-
     @Test
-    public void listIsNotNull(){
+    public void listIsNotNull() {
         Assertions.assertNotNull(bookDDBB);
     }
 
     @Test
-    public void listSizeIsCorrect(){
+    public void listSizeIsCorrect() {
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
         Assertions.assertEquals(2, bookDDBB.getSize());
     }
 
     @Test
-    public void bookIsAtCorrectPosition(){
+    public void bookIsAtCorrectPosition() {
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
         Assertions.assertEquals("El libro de los Test", bookDDBB.getNameByIndex(1));
     }
 
     @Test
-    public void bookIsNotDuplicated(){
+    public void bookIsNotDuplicated() {
         bookDDBB.addBook(book1);
         Book duplicatedBook = new Book("El libro de los Test");
 
@@ -47,8 +46,9 @@ public class BookDDBBTest {
         String failmessage = "The duplicate book should have been baned. The proper size of the list should be 1";
         Assertions.assertEquals(1, bookDDBB.getSize(), failmessage);
     }
+
     @Test
-    public void getBookAtSpecificIndex(){
+    public void getBookAtSpecificIndex() {
         bookDDBB.addBook(book1);
         bookDDBB.addBook(book2);
         Assertions.assertEquals("El gran libro de los Test", bookDDBB.getNameByIndex(0));
@@ -56,7 +56,7 @@ public class BookDDBBTest {
     }
 
     @Test
-    public void listStillOrganizedAfterAdding(){
+    public void listStillOrganizedAfterAdding() {
         Book bookA = new Book("Agora");
         Book bookB = new Book("Belgica");
         Book bookC = new Book("California");
@@ -71,7 +71,7 @@ public class BookDDBBTest {
     }
 
     @Test
-    public void listDecreasesAfterRemovingElement(){
+    public void listDecreasesAfterRemovingElement() {
         Book bookA = new Book("Agora");
         Book bookB = new Book("Belgica");
         Book bookC = new Book("California");
@@ -86,7 +86,7 @@ public class BookDDBBTest {
     }
 
     @Test
-    public void CheckListStillOrginizedAfterRemovingElement(){
+    public void CheckListStillOrginizedAfterRemovingElement() {
 
         Book bookA = new Book("Agora");
         Book bookB = new Book("Belgica");
@@ -102,11 +102,6 @@ public class BookDDBBTest {
 
 
     }
-
-
-
-
-
 
 
 }
